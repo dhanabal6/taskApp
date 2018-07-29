@@ -27,4 +27,11 @@ npm run build
 - In this app run 3000 port (http://localhost:3000)
 - Using React bootstrap forms
 - In this project using material-ui styles and icons
-- Fornt End Development using ReactJs-
+- Fornt End Development using ReactJs
+
+## This Project to deploy static files netlify app
+
+```
+https://taskapp.netlify.com
+
+```
