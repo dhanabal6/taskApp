@@ -32,13 +32,17 @@ class UserForm extends Component {
     axios
       .post(`/api/users`, formData)
       .then(res => {
-        console.log(res.data);
+        if(res.data){  
+        window.alert("User data save sucessfully");
         window.location = "/";
-        this.props.history.push("/");
+        // this.props.history.push("/");
+        }
       })
       .catch(err => {
+        if(err){   
+        window.alert("User data not save");
         window.location = "/";
-        console.log(err);
+        }
       });
   };
 

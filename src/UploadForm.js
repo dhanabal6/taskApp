@@ -25,13 +25,17 @@ class UploadForm extends Component {
     axios
       .post(`/api/upload/${userId}`, formData)
       .then(res => {
-        window.alert({msg: res.data});
+        if(res.data){  
+        window.alert("Mail send sucessfully");
         window.location = "/";
         // this.props.history.push("/");
+        }
       })
       .catch(err => {
-        window.alert({msg: 'mail not send'});
+        if(err){  
+        window.alert("mail not send");
         window.location = "/";
+        }
       });
   };
 
