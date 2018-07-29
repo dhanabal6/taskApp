@@ -25,13 +25,13 @@ class UploadForm extends Component {
     axios
       .post(`/api/upload/${userId}`, formData)
       .then(res => {
-        // console.log(res.data);
-        window.location = "/";
+        console.log(res.data);
+        // window.location = "/";
         this.props.history.push("/");
       })
       .catch(err => {
-        // console.log(err);
-        window.location = "/";
+        console.log(err);
+        // window.location = "/";
       });
   };
 

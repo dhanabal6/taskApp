@@ -94,7 +94,7 @@ class App extends Component {
                       <TableRowColumn>
                         <Link
                           to={"/upload/" + value._id}
-                          onClick={() => this.props.handleOpen()}
+                          onClick={this.handleOpen}
                         >
                           upload & ShareFile
                         </Link>
